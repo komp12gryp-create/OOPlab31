@@ -165,8 +165,8 @@ namespace OOPlab31
 
         private int GetSelectedProcessId()
         {
-            string? selected = listBox1.SelectedItem?.ToString();
-            string idStr = selected!.Split('|')[0].Replace("ID:", "").Trim();
+            string selected = listBox1.SelectedItem.ToString();
+            string idStr = selected.Split('|')[0].Replace("ID:", "").Trim();
             return int.Parse(idStr);
         }
     }
